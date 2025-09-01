@@ -14,18 +14,47 @@
 .LightPurple {
     color: #e8d9ed;
 }
-
 .Lace {
-    background-color: #f7f4ed;
     color: #f7f4ed;
+}
+
+.DarkBlueBackground {
+    background-color: #0b1957;
+}
+.BlueBackground {
+    background-color: #426bc2;
+}
+.LightBlueBackground {
+    background-color: #e9f3ff;
+}
+.DarkPurpleBackground {
+    background-color: #d2b3db;
+}
+.LightPurpleBackground {
+    background-color: #e8d9ed;
+}
+
+.LaceBackground {
+    background-color: #f7f4ed;
 }
 .Container {
     background-color: #f7f4ed;
     width: 100%;
     height: 100%;
     padding: 0;
+    margin-left: 0%;
 }
 .Logo{
     width: 220px;
     height: auto;
+    margin-left: 1%;
+}
+.Divider{
+    margin-bottom: 1%;
+    height: 2px;
+    opacity: 0.3;
+    width: 100%;
+    padding: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
