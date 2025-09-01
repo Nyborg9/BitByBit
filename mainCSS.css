@@ -1,0 +1,31 @@
+.DarkBlue {
+    color: #0b1957;
+}
+.Blue {
+    color: #426bc2;
+}
+.LightBlue {
+    color: #e9f3ff;
+}
+
+.DarkPurple {
+    color: #d2b3db;
+}
+.LightPurple {
+    color: #e8d9ed;
+}
+
+.Lace {
+    background-color: #f7f4ed;
+    color: #f7f4ed;
+}
+.Container {
+    background-color: #f7f4ed;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.Logo{
+    width: 220px;
+    height: auto;
+}
