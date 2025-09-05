@@ -159,8 +159,8 @@ nav a:hover{color:var(--brand-600)}
 
 /* ——— To kolonner (tilby / ser etter) ——— */
 .two-col{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr; /* én kolonne */
   gap: 60px;
   max-width: 1100px;
   margin: 100px auto;
@@ -189,4 +189,13 @@ nav a:hover{color:var(--brand-600)}
   height: auto;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Bildetekst under gruppebildet */
+.group-caption {
+  font-size: 16px;
+  color: var(--muted);  /* matcher de andre sekundærtekstene */
+  margin-top: 12px;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-style: italic; /* gjør teksten kursiv */
 }
