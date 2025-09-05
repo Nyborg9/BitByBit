@@ -23,7 +23,7 @@ body{
 }
 
 .site-header{
-  position:sticky; top:0; z-index:10;
+  position:sticky; top: 0; z-index:10;  
   background:var(--bakgrunn);
   border-bottom:1px solid var(--line);
 }
@@ -51,7 +51,7 @@ nav a:hover{color:var(--brand-600)}
   font-family:'Hammersmith One', Impact, sans-serif;
   font-size:70px;
   line-height:1.1;
-  margin:20px 0 60px;
+  margin:20px 0 20px;
   color:var(--brand);
   font-weight:700; 
   letter-spacing:.3px;
@@ -150,11 +150,11 @@ nav a:hover{color:var(--brand-600)}
 }
 
 .kontakt-img{
-  width: 150%;
+  width: 100%;
   max-width: 400px;
   border-radius: 12px;
   object-fit: cover;
-  display: block;
+  display: block; 
   margin: 100px auto; 
 }
 
@@ -162,7 +162,8 @@ nav a:hover{color:var(--brand-600)}
   display:grid;
   grid-template-columns: 1fr 400px ; 
   gap: 80px;            
-  align-items: start;  
+  align-items: start;
+  width: auto;    
   max-width: 1000px;
   margin: 100px auto;   
 }
@@ -180,6 +181,13 @@ nav a:hover{color:var(--brand-600)}
   }
 }
 
+@media (max-width: 900px){
+  .kontakt-block{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 40px auto;
+  }
+}
 
 /* To kolonner (tilby / ser etter) */
 .two-col{
@@ -187,7 +195,7 @@ nav a:hover{color:var(--brand-600)}
   grid-template-columns: 1fr; 
   gap: 60px;
   max-width: 1100px;
-  margin: 100px auto;
+  margin: 30px auto;
 }
 
 
