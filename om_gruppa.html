@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flickity Carousel Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <link rel="stylesheet" href="mainCSS.css">
+
+<style>
+    .carousel {
+      background: #eee;
+    }
+    .carousel-cell {
+      width: 20%; /* size of each cell */
+      max-height: 500px;
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+    .carousel-cell img {
+      display: block;
+      width: 100%; /* make images responsive */
+      border-radius: 10px;
+    }
+
+    .carousel-cell p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-cell"><img src="img/hannah.jpeg" alt="Hannah"><p>Hannah er ei flott dame!</p></div>
+    <div class="carousel-cell"><img src="img/katarina.jpeg" alt="Katarina"></div>
+    <div class="carousel-cell"><img src="img/mikael.jpeg" alt="Mikael"></div>
+    <div class="carousel-cell"><img src="img/iselin.jpeg" alt="Iselin"></div>
+  </div>
+
+  <!-- Flickity JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+  <script>
+    // Initialize carousel
+    var flkty = new Flickity('.carousel', {
+      cellAlign: 'center',
+      contain: true,
+      wrapAround: true,
+      autoPlay: 2500
+    });
+  </script>
+
+</body>
+</html>
