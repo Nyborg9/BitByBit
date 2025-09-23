@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karusell BitByBit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <link rel="stylesheet" href="../css/mainCSS.css">
+    <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="bitbybit.html">
+        <img src="../img/logo.png" alt="BitByBit Logo" class="logo-img">
+        
+      </a>
+      <nav aria-label="Hovedmeny">
+        <ul>
+          <li><a href="medlemmer.html">Medlemmer</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="bedrifter.html">Bedrifter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<style>
+    .carousel {
+      background: #eee;
+    }
+    .carousel-cell {
+      width: 20%; /* size of each cell */
+      max-height: 500px;
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+    .carousel-cell img {
+      display: block;
+      width: 100%; /* make images responsive */
+      border-radius: 10px;
+    }
+
+    .carousel-cell p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-cell"><img src="../img/hannah.jpeg" alt="Hannah"><p>Hannah er ei flott dame!</p></div>
+    <div class="carousel-cell"><img src="../img/katarina.jpeg" alt="Katarina"></div>
+    <div class="carousel-cell"><img src="../img/mikael.jpeg" alt="Mikael"></div>
+    <div class="carousel-cell"><img src="../img/iselin.jpeg" alt="Iselin"></div>
+    <div class="carousel-cell"><img src="../img/Fotodag.jpg" alt="actionbilde under fotografering"></div>
+    <div class="carousel-cell"><img src="../img/Gruppebilde2.JPG" alt="Gruppebilde"></div>
+    <div class="carousel-cell"><img src="../img/Gruppebilde_Techpoint.jpg" alt="Gruppebilde"></div>
+    <div class="carousel-cell"><img src="../img/Techpoint_gruppe.jpg" alt="Gruppa på Techpoint"></div>
+    <div class="carousel-cell"><img src="../img/Techpoint.jpg" alt="Det følges nøye med"></div>
+    <div class="carousel-cell"><img src="../img/Techpoint_scene.jpg" alt="Bilde av scenen"></div>
+
+  </div>
+
+  <!-- Flickity JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+  <script>
+    // Initialize carousel
+    var flkty = new Flickity('.carousel', {
+      cellAlign: 'center',
+      contain: true,
+      wrapAround: true,
+      autoPlay: 2500
+    });
+  </script>
+
+</body>
+</html>

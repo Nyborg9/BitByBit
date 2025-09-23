@@ -328,3 +328,12 @@ body {
     margin-bottom: 20px;
   }
 }
+
+.card-navn {
+  color: var(--brand);
+}
+
+.card-tittel {
+  font-size: 17px;
+  font-style: italic;
+}
