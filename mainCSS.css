@@ -168,6 +168,16 @@ nav a:hover{color:var(--brand-600)}
   text-align:left;
 }
 
+.role-text{
+  margin:0 auto;
+  color: black; 
+
+  font-family:'Hammersmith One', Impact, sans-serif;
+  font-size:16px;
+  font-weight:300; 
+  text-align:left;
+}
+
 .about-img-linkedin {
   display: flex;
   flex-direction: column;
@@ -273,4 +283,48 @@ nav a:hover{color:var(--brand-600)}
   margin-top: 12px;
   font-family:'Open Sans', Arial, sans-serif;
   font-style: italic; 
+}
+
+
+/* Cards om oss */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
