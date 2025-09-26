@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BitByBit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="mainCSS.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="BitByBit Logo" class="logo-img">
+      </a>
+      <nav aria-label="Hovedmeny">
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="om_oss.html">Om oss</a></li> 
+          <li><a href="kontakt_oss.html">Kontakt oss</a></li>
+          <li><a href="for_bedrifter.html">For Bedrifter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Tideligere erfaringer</h1>
+
+        <video poster="KartverketProsjekt.jpg" autoplay controls width="600" height="400">
+          <source src="KartverketProsjekt.mp4" type="video/mp4">
+
+          Din nettleser støtter ikke HTML5 video. 
+        </video>
+
+      </div>
+    </section>
+    <section id="index" class="wrap" aria-label="Hjem"></section>
+    <section id="om-oss" class="wrap" aria-label="Om oss"></section>
+    <section id="kontakt" class="wrap" aria-label="Kontakt oss"></section>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+  
+    document.querySelectorAll(".infoblock").forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
