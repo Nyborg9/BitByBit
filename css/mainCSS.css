@@ -1,10 +1,12 @@
 :root{
   --brand:#3f6ed6;          /* hovedfarge */
   --brand-600:#2f58b5;
-  --accent:#c79be8;         /* undertittel */
+  --accent:#c79be8;
+  --hover-accent: #b477e4;         /* undertittel */
   --ink:#2b3340;            /* brødtekst */
   --muted:#6c7a92;          /* sekundærtekst */
-  --bakgrunn:rgb(247,244,237);  /* bakgrunnsfarge */
+  --lys-bakgrunn:rgb(247,244,237);  /* bakgrunnsfarge */
+  --bakgrunn: rgb(40, 40, 40);
   --line:#e6e8ef;           
   --radius:16px;
   --container:1100px;
@@ -36,11 +38,11 @@ body{
 
 nav ul{display:flex; gap:22px; list-style:none; margin:0; padding:0; font-size: 1.3rem;}
 nav a{
-  color:var(--brand);
+  color:var(--accent);
   text-decoration:none;
   font-weight:300; 
 }
-nav a:hover{color:var(--brand-600)}
+nav a:hover{color:var(--hover-accent)}
 
 .hero{
   padding:10px 0 0px;
@@ -69,6 +71,7 @@ nav a:hover{color:var(--brand-600)}
   max-width:820px;
   margin:0 auto;
   color:#2f3a4b;
+  color: white;
   font-family:'Open Sans', Arial, sans-serif;
   font-size:16px;
   font-weight:300; 

@@ -1,7 +1,7 @@
   /* Float four columns side by side */
   .column {
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 0 10px;
   }
   
@@ -26,7 +26,7 @@
   
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     padding: 16px;
     text-align: center;
     background-color: var(--bakgrunn);
@@ -34,7 +34,7 @@
 
   .card-navn {
     font-size: 21px;
-    color: var(--brand);
+    color: var(--lys-bakgrunn);
     margin: 0%;
   }
 
@@ -42,6 +42,7 @@
     font-size: 13px;
     letter-spacing: 1px;
     margin: 0%;
+    color: var(--lys-bakgrunn);
   }
 
   /* Add rounded corners to the top left and the top right corner of the image */
