@@ -26,7 +26,7 @@
   
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
     padding: 16px;
     text-align: center;
     background-color: var(--bakgrunn);
@@ -46,12 +46,14 @@
   }
 
   /* Add rounded corners to the top left and the top right corner of the image */
-img {
-    border-radius: 5px 5px 0 0;
+  .img-skygge {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
+
   }
 
   .label {
-    color: white;
+    color: black;
     padding: 8px;
     font-size: x-small;
   }
