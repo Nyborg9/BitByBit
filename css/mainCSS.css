@@ -152,7 +152,7 @@ nav a:hover{color:var(--hover-accent)}
   border-radius: 12px;
   object-fit: cover;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 15px auto 10px auto;
 }
 .info-buttons{
   display: block;
@@ -173,7 +173,7 @@ nav a:hover{color:var(--hover-accent)}
 
 .role-text{
   margin:0 auto;
-  color: black; 
+  color: var(--lys-bakgrunn); 
 
   font-family:'Hammersmith One', Impact, sans-serif;
   font-size:16px;
