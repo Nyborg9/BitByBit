@@ -267,9 +267,10 @@ nav a:hover{color:var(--hover-accent)}
 
 /* ——— Gruppebilde ——— */
 .group-photo{
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0px auto;
   text-align: center;
+  align-content: center;
 }
 
 .group-img{
@@ -277,6 +278,7 @@ nav a:hover{color:var(--hover-accent)}
   height: auto;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  align-self:center;
 }
 
 /* Bildetekst under gruppebildet */

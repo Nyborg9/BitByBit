@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/mainCSS.css">
+  <link rel="stylesheet" href="../css/kort.css">
+  <link rel="stylesheet" href="../css/kort-expand.css">
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.png" alt="BitByBit Logo" class="logo-img">
+      </a>
+      <!-- Navigationbar -->
+      <nav aria-label="Hovedmeny">
+        <ul>
+          <li><a href="medlemmer.html">Medlemmer</a></li>
+          <li><a href="bedrifter.html">Bedrifter</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1 style="padding-bottom: 2%;">Medlemmer</h1>
+          <div style="width: 100%;">
+            <!--Kort med info om oss, fordelt i 3 kolonner-->
+            <div class="row">
+              <!--Katarina-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/katarina-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Katarina Kirkhus</b></h4>
+                    <p class="card-tittel">Gruppeleder &<br>fullstack-utvikler</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/katare17" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Katarina" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kkirkhus//" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Katarina" class="info-buttons">
+                    </a>
+                  </div>
+                  <div class="extra-content">
+  <p>Ekstra informasjon om medlemmet her...</p>
+</div>
+
+                </div>
+              </div>
+              <!--Hannah-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/hannah-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Hannah Klavenes</b></h4>
+                    <p class="card-tittel">Scrum master &<br>sikkerhetsansvarlig</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/Hannahtk04" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Hannah" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/hannah-klavenes-3b48a02a0/" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Hannah" class="info-buttons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--Mikael-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/mikael-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Mikael Nyborg</b></h4>
+                    <p class="card-tittel">Teambuilder & <br>backend-ansvarlig</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/nyborg9" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Mikael" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikaelnyborg/" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Mikael" class="info-buttons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+<script>
+  function toggleCard(clickedCard) {
+    const row = clickedCard.closest('.row');
+    const allColumns = row.querySelectorAll('.column');
+    const allCards = row.querySelectorAll('.card');
+    const clickedColumn = clickedCard.closest('.column');
+    const isAlreadyExpanded = clickedCard.classList.contains('expanded');
+
+    // Reset all
+    allCards.forEach(card => card.classList.remove('expanded'));
+    allColumns.forEach(col => col.classList.remove('hidden', 'expanded-column'));
+
+    if (!isAlreadyExpanded) {
+      // Expand clicked card
+      allColumns.forEach(col => {
+        if (col !== clickedColumn) {
+          col.classList.add('hidden');
+        }
+      });
+      clickedColumn.classList.add('expanded-column');
+      clickedCard.classList.add('expanded');
+    }
+  }
+
+  // Attach click handlers
+  window.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => toggleCard(card));
+    });
+  });
+</script>
+
+
+</body>
+</html>
