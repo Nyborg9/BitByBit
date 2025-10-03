@@ -27,7 +27,7 @@ body{
 .site-header{
   position:sticky; top: 0; z-index:10;  
   background:var(--bakgrunn);
-  border-bottom:1px solid var(--line);
+  
 }
 .wrap{max-width:var(--container); margin-inline:auto; padding-inline:20px}
 .bar{display:flex; align-items:center; justify-content:space-between; padding:3px 0}
@@ -54,7 +54,7 @@ nav a:hover{color:var(--hover-accent)}
   font-size:60px;
   line-height:1.1;
   margin:15px 0 2px;
-  color:var(--brand);
+  color:var(--lys-bakgrunn);
   font-weight:700; 
   letter-spacing:.3px;
 }
