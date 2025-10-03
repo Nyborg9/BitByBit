@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="css/mainCSS.css">
+  <link rel="stylesheet" href="css/mainCSS.css">  
+  <link rel="stylesheet" href="css/kort.css">
+
 </head>
 <body>
   <!-- Header -->
@@ -37,26 +39,71 @@
 
  
 
-<section class="wrap group-photo">
-  <figure>
-    <img src="img/midlertidig-gruppebilde.JPG" alt="BitByBit team" class="group-img" >
-    <figcaption class="group-caption">Vi i BitByBit deler en felles ambisjon om å skape noe som både utfordrer oss og gir verdi for andre. 
-      Sammen har vi et mål om å skape noe med verdi, både for oss og for prosjekteier. Dette krever samarbeid, 
-      engasjement og viljen til å satse. </figcaption>
-  </figure>
-</section>
+<section class="wrap">
+  <div style="width: 80%; align-self: center; margin:auto">
+            <!--Kort med info om oss, fordelt i 3 kolonner-->
+            <div class="row">
+              <!--Katarina-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/katarina-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Katarina Kirkhus</b></h4>
+                    <p class="card-tittel">Gruppeleder &<br>fullstack-utvikler</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/katare17" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Katarina" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kkirkhus//" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Katarina" class="info-buttons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--Hannah-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/hannah-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Hannah Klavenes</b></h4>
+                    <p class="card-tittel">Scrum master &<br>sikkerhetsansvarlig</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/Hannahtk04" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Hannah" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/hannah-klavenes-3b48a02a0/" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Hannah" class="info-buttons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--Mikael-->
+              <div class="column">
+                <div class="card">
+                  <img src="../img/mikael-flavor.JPG" alt="Avatar" style="width:100%" class="img-skygge">
+                  <div class="container">
+                    <h4 class="card-navn"><b>Mikael Nyborg</b></h4>
+                    <p class="card-tittel">Teambuilder & <br>backend-ansvarlig</p>
+                  </div>
+                  <div class="profile-buttons">
+                    <a href="https://github.com/nyborg9" target="_blank" rel="noopener">
+                      <img src="../img/Github rosa.png" alt="Github til Mikael" class="info-buttons">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikaelnyborg/" target="_blank" rel="noopener">
+                      <img src="../img/Linked in rosa.png" alt="Linkedin til Mikael" class="info-buttons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          </section>
+      </div>
+    </section>
+  </main>
 
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    });
-  
-    document.querySelectorAll(".infoblock").forEach(el => observer.observe(el));
-  </script>
 
 </body>
 </html>
