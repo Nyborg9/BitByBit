@@ -1,11 +1,11 @@
 :root{
-  --brand:#3f6ed6;          /* hovedfarge */
-  --brand-600:#2f58b5;
-  --accent:#c79be8;
+  --brand:#b4654a;          /* hovedfarge */
+  --brand-600:#ffffff;
+  --accent:#bbce8a;
   --hover-accent: #b369eb;         /* undertittel */
   --ink:#2b3340;            /* brødtekst */
   --muted:#6c7a92;          /* sekundærtekst */
-  --lys-bakgrunn:rgb(247,244,237);  /* bakgrunnsfarge */
+  --lys-bakgrunn:#fefae0;  /* bakgrunnsfarge */
   --bakgrunn: rgb(40, 40, 40);
   --line:#e6e8ef;           
   --radius:16px;
@@ -54,7 +54,7 @@ nav a:hover{color:var(--hover-accent)}
   font-size:60px;
   line-height:1.1;
   margin:15px 0 2px;
-  color:var(--lys-bakgrunn);
+  color:var(--brand-600);
   font-weight:700; 
   letter-spacing:.3px;
 }
@@ -173,7 +173,7 @@ nav a:hover{color:var(--hover-accent)}
 
 .role-text{
   margin:0 auto;
-  color: var(--lys-bakgrunn); 
+  color: var(--brand-600); 
 
   font-family:'Hammersmith One', Impact, sans-serif;
   font-size:16px;
