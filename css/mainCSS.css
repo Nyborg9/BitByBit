@@ -46,6 +46,7 @@ nav a{
   color: var(--accent);
   text-decoration:none;
   font-weight:300; 
+  letter-spacing: 1.2px;
 }
 nav a:hover{color:var(--hover-accent)}
 
