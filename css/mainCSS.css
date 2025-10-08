@@ -138,10 +138,12 @@ nav a:hover{color:var(--hover-accent)}
 .erfaringer-text{
   font-size: 17px;
 }
+
 .githubKnapp{
   width: 40px;
   padding-top: 0;
 }
+
 .card{
   background:var(--bakgrunn);
   border:1px solid var(--line);
@@ -182,6 +184,7 @@ nav a:hover{color:var(--hover-accent)}
   max-width: 1000px;
   margin: 25px auto;   
 }
+
 /* Mobil */
 @media (max-width: 900px){
   .about-block{
@@ -247,4 +250,51 @@ nav a:hover{color:var(--hover-accent)}
   margin-top: 12px;
   font-family:'Open Sans', Arial, sans-serif;
   font-style: italic; 
+}
+
+.erfaring-bilde {
+  width: 500px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.in-text-lenke {
+  color: var(--brand);
+}
+
+.tag-cloud {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: var(--brand);
+  margin-top: 40px;
+  max-width: fit-content;
+  font-size: 15px;
+}
+
+.labels-box {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.label {
+  position: relative;
+  color: #313715;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.info {background-color: var(--accent);}
+
+.valgemne-link {
+  text-decoration: none;
+}
+
+#prosjekt, 
+#arbeidserfaring, 
+#praksis, 
+#valgemner {
+  scroll-margin-top: 80px;
 }
