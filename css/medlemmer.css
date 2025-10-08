@@ -103,3 +103,7 @@
 .uthevet {
   color: var(--accent);
 }
+
+.intern-lenke{
+  text-decoration: none;
+}
