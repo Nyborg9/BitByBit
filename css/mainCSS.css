@@ -2,6 +2,7 @@
   --brand:#dda15e;          /* hovedfarge */
   --brand-600:#ffffff;
   --accent:#bbce8a;
+  --dark-accent: #313715;
   --hover-accent: var(--brand);         /* undertittel */
   --ink:#2b3340;            /* brødtekst */
   --muted:#6c7a92;          /* sekundærtekst */
@@ -256,23 +257,25 @@ nav a:hover{color:var(--hover-accent)}
 
 .erfaring-bilde {
   width: 500px;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 25px;
 }
 
-.in-text-lenke {
-  color: var(--brand);
+.lenke {
+  text-decoration: none;
+
 }
 
 .tag-cloud {
   display: inline-block;
-  color: white;
+  color: var(--dark-accent);
   padding: 8px 20px;
   border-radius: 25px;
-  background-color: var(--brand);
+  background-color: var(--accent);
   margin-top: 40px;
   max-width: fit-content;
   font-size: 15px;
+  font-weight: bold;
 }
 
 .labels-box {
@@ -286,14 +289,10 @@ nav a:hover{color:var(--hover-accent)}
   font-size: 15px;
   font-weight: bold;
   white-space: nowrap;
+  background-color: var(--accent);
   
 }
 
-.info {background-color: var(--accent);}
-
-.valgemne-link {
-  text-decoration: none;
-}
 
 #prosjekt, 
 #tsgg, 
@@ -302,4 +301,8 @@ nav a:hover{color:var(--hover-accent)}
 #devoteam, 
 #valgemner {
   scroll-margin-top: 80px;
+}
+
+.uthevet {
+  color: var(--accent);
 }
